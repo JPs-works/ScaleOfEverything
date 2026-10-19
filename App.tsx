@@ -163,7 +163,7 @@ export default function App() {
 
   // Common Scene Props
   const sceneProps = {
-      camera: { position: [0, 0, 5], fov: 45 },
+      camera: { position: [0, 0, 5] as [number, number, number], fov: 45 },
       dpr: typeof window !== 'undefined' ? window.devicePixelRatio : 1
   };
 
