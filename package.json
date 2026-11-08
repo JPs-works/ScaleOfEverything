@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "generate-models": "tsx scripts/generate-models.ts"
+    "test": "tsx scripts/test-formatting.ts",
+    "process-assets": "tsx scripts/process-assets.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.0",
@@ -19,12 +20,17 @@
   },
   "devDependencies": {
     "@gltf-transform/core": "^4.2.1",
+    "@gltf-transform/extensions": "^4.2.1",
     "@gltf-transform/functions": "^4.2.1",
+    "@tailwindcss/vite": "~4.2.1",
     "@types/node": "^22.14.0",
+    "@types/three": "^0.180.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "meshoptimizer": "1.2.0",
+    "sharp": "^0.35.4",
+    "tailwindcss": "~4.2.1",
     "tsx": "^4.21.0",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0",
-    "@types/three": "^0.180.0"
+    "vite": "^6.2.0"
   }
 }
