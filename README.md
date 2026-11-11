@@ -48,7 +48,6 @@ src/
   data/items.ts           the ladder: sizes in metres, facts, sources
   data/familiar.ts        everyday objects for analogies
   illustrations/art/      one flat SVG component per object (auto-registered)
-legacy/                   the previous Three.js prototype and its GLB models (safe to delete)
 ```
 
 ## Data

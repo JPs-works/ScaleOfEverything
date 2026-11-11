@@ -80,7 +80,7 @@ export const StoryPanel = memo(forwardRef<HTMLElement, Props>(function StoryPane
           <details className="story__facts" open={factsOpen}>
             <summary><ChevronDown size={14} /> Did you know</summary>
             <ul>{item.facts.map((f, i) => <li key={i}>{f}</li>)}</ul>
-            {item.source && item.source !== 'legacy' && <div className="story__source">Size: {item.source}</div>}
+            {item.source && <div className="story__source">Size: {item.source}</div>}
           </details>
         )}
       </div>
