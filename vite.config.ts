@@ -9,8 +9,10 @@ export default defineConfig({
   base: '/apps/scale-of-everything/',
   plugins: [react()],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, '.'),
-    },
+    alias: { '@': path.resolve(__dirname, 'src') },
+  },
+  build: {
+    target: 'es2020',
+    sourcemap: false,
   },
 });
