@@ -14,5 +14,8 @@ export default defineConfig({
   build: {
     target: 'es2020',
     sourcemap: false,
+    // lucide-react's barrel opens ~1500 icon files; cap parallel reads so
+    // small file-descriptor limits (Cloudflare builds) don't hit EMFILE.
+    rollupOptions: { maxParallelFileOps: 100 },
   },
 });
